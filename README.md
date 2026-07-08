@@ -1,2 +1,2 @@
 # agones-eks-platform
-A project that aims to create ultra-fast and responsive servers for games using K8s handled by AWS.
+A production-grade platform designed to orchestrate ultra-fast, low-latency, and responsive dedicated game servers using Agones and Amazon EKS.
