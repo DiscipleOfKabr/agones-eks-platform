@@ -11,7 +11,7 @@ override.tf.json
 *.secret
 *.key
 *.pem
-
+*secret.tfvars
 # --- AWS & Credentials ---
 # Never track AWS credential files
 .aws/
