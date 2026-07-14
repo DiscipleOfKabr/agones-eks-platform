@@ -1,0 +1,15 @@
+apiVersion: "agones.dev/v1"
+kind: "GameServer"
+metadata:
+  name: "simple-game-server"
+spec:
+  ports:
+    - name: "default"
+      portPolicy: "Dynamic"
+      containerPort: 7654
+  template:
+    spec:
+      containers:
+        - name: "simple-game-server"
+          image: "us-docker.pkg.dev/agones-images/examples/simple-game-server:0.14"
+

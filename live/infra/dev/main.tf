@@ -1,7 +1,8 @@
 
+
 module "network" {
   source   = "git::https://github.com/DiscipleOfKabr/aws-vpc-backbone//modules/vpc"
-  env_name = "agones-dev"
+  env_name = var.env_name
   vpc_cidr = "10.1.0.0/16"
 
   subnet_configs = {
@@ -13,12 +14,3 @@ module "network" {
 }
 
 
-#EKS module that connects to the aws-vpc-backbone
-module "eks" {
-
-  source   = "../../modules/eks"
-  env_name = "agones-dev"
-
-
-  private_subnet_ids = module.network.private_subnet_ids
-}

@@ -1,0 +1,10 @@
+agones:
+  controller: 
+    resources:
+      requests:
+        ephemeral-storage: 100Mi
+  extensions:
+    resources:
+      requests:
+        ephemeral-storage : 100Mi
+
