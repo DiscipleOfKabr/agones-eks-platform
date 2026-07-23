@@ -4,7 +4,7 @@ data "terraform_remote_state" "network" {
   config = {
     
     bucket = "agones-project-bckt" 
-    key    = "infra/dev/terraform.tfstate" 
+    key    = "dev/agones-platform.tfstate" 
     region = "eu-central-1"
   }
 }

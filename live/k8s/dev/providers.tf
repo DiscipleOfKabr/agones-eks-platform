@@ -13,10 +13,9 @@ terraform {
     }
   }
 
-  
   backend "s3" {
-    bucket  = "agones-project-bckt" 
-    key     = "eks/dev/terraform.tfstate"        
+    bucket  = "agones-project-bckt"
+    key     = "dev/eks-cluster.tfstate"
     region  = "eu-central-1"
     encrypt = true
   }
