@@ -6,6 +6,7 @@
 *.log
 *.tfvars
 *.tfvars.json
+*plan
 override.tf
 override.tf.json
 *.secret
