@@ -12,7 +12,7 @@ data "terraform_remote_state" "network" {
 resource "aws_eks_cluster" "this" {
   name     = "${var.env_name}-cluster"
   role_arn = aws_iam_role.cluster.arn
-  version  = "1.30"
+  version  = "1.35"
 
   vpc_config {
     subnet_ids              = data.terraform_remote_state.network.outputs.private_subnet_ids

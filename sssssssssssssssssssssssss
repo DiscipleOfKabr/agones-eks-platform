@@ -1,0 +1,18 @@
+[33mcommit fd96847666fa98ec87f8984cc735a782b9f77634[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Alex <kapetsonisalexandros@gmail.com>
+Date:   Wed Sep 30 18:18:29 2026 +0300
+
+    Updated code and gitignore
+
+[33mcommit 7a37cd6ce8f41d4aae5ae22fa1d75ad4f1efad16[m
+Merge: 73dbd8d 942f704
+Author: Alex <kapetsonisalexandros@gmail.com>
+Date:   Tue Jul 14 20:29:26 2026 +0300
+
+    Merge branch 'main' of https://github.com/DiscipleOfKabr/agones-eks-platform
+
+[33mcommit 73dbd8db4d74380af967d913ea710a02cdf3876d[m
+Author: Alex <kapetsonisalexandros@gmail.com>
+Date:   Tue Jul 14 20:27:37 2026 +0300
+
+    Restructured the code as a monolithic approach is not ideal for this project
