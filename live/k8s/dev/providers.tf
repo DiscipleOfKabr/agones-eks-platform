@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 1.10.0"
+  required_version = ">= 1.11.0"
 
   required_providers {
     aws = {
@@ -18,6 +18,7 @@ terraform {
     key     = "dev/eks-cluster.tfstate"
     region  = "eu-central-1"
     encrypt = true
+    use_lockfile = true
   }
 }
 
