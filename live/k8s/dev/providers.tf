@@ -6,7 +6,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
-    
+
     tls = {
       source  = "hashicorp/tls"
       version = "~> 4.0"
@@ -14,10 +14,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket  = "agones-project-bckt"
-    key     = "dev/eks-cluster.tfstate"
-    region  = "eu-central-1"
-    encrypt = true
+    bucket       = "agones-project-bckt"
+    key          = "dev/eks-cluster.tfstate"
+    region       = "eu-central-1"
+    encrypt      = true
     use_lockfile = true
   }
 }

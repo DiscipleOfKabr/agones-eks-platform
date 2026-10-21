@@ -1,7 +1,7 @@
 
 
 module "network" {
-  source = "git::https://github.com/DiscipleOfKabr/aws-vpc-backbone//modules/vpc?ref=v0.1.0"
+  source   = "git::https://github.com/DiscipleOfKabr/aws-vpc-backbone//modules/vpc?ref=v0.1.0"
   env_name = var.env_name
   vpc_cidr = "10.1.0.0/16"
 
